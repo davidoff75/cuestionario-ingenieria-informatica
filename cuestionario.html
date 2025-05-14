@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Valoras estudiar  Ingeniería Informática?
+    Autoevalúate con este cuestionario
+  </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #f9f9f9;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    .instructions {
+      background: #eef5fb;
+      border-left: 5px solid #3498db;
+      padding: 15px;
+      margin-bottom: 30px;
+    }
+    h3 {
+      margin-top: 40px;
+      color: #34495e;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+    }
+    .question {
+      margin-bottom: 30px;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .slider-container {
+      display: flex;
+      align-items: center;
+    }
+    input[type="range"] {
+      width: 100%;
+      height: 6px;
+    }
+    .scale {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #777;
+      margin-top: 5px;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 30px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    #result {
+      margin-top: 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    /* Colores de las secciones */
+    .intereses input[type="range"] {
+      accent-color: #e67e22;
+    }
+    .cognitivas input[type="range"] {
+      accent-color: #27ae60;
+    }
+    .sociales input[type="range"] {
+      accent-color: #8e44ad;
+    }
+    .profesional input[type="range"] {
+      accent-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+    <h1> I.E.S Carmen Conde - Feria de las profesiones 2025</h1>
+  <h2>Estás valorando estudiar  Ingeniería Informática?</h2>
+<h2> Autoevalúate con este cuestionario</h2>
+
+  <div class="instructions">
+    <p><strong>Instrucciones:</strong> Este cuestionario te ayudará a reflexionar sobre si la ingeniería informática podría ser una buena opción para ti. Lee cada afirmación y mueve el control deslizante para indicar cuánto te identificas con ella:</p>
+    <ul>
+      <li>1 = Nada de acuerdo</li>
+      <li>5 = Muy de acuerdo</li>
+    </ul>
+    <p>Al final verás una puntuación total y una orientación general sobre tu afinidad con esta carrera.</p>
+  </div>
+
+  <form id="quizForm">
+    <div class="intereses">
+      <h3>💡 Intereses personales</h3>
+      <div class="question"><label>1. Me gusta entender cómo funcionan las cosas:</label>
+        <div class="slider-container">
+          <input type="range" name="q1" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>2. Me atrae la tecnología y las novedades digitales:</label>
+        <div class="slider-container">
+          <input type="range" name="q2" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>3. Me imagino creando apps o juegos útiles:</label>
+        <div class="slider-container">
+          <input type="range" name="q3" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>4. Me gusta aprender por mi cuenta:</label>
+        <div class="slider-container">
+          <input type="range" name="q4" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>5. Me atrae la posibilidad de teletrabajo:</label>
+        <div class="slider-container">
+          <input type="range" name="q5" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+    </div>
+
+    <div class="cognitivas">
+      <h3>🧠 Habilidades cognitivas</h3>
+      <div class="question"><label>6. Disfruto resolviendo problemas lógicos:</label>
+        <div class="slider-container">
+          <input type="range" name="q6" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>7. Se me dan bien las matemáticas o física:</label>
+        <div class="slider-container">
+          <input type="range" name="q7" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>8. Pienso de forma estructurada o paso a paso:</label>
+        <div class="slider-container">
+          <input type="range" name="q8" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>9. Me adapto bien a programas nuevos:</label>
+        <div class="slider-container">
+          <input type="range" name="q9" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>10. Me concentro bien usando el ordenador:</label>
+        <div class="slider-container">
+          <input type="range" name="q10" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+    </div>
+
+    <div class="sociales">
+      <h3>🤝 Habilidades sociales y de trabajo en equipo</h3>
+      <div class="question"><label>11. Me siento cómodo trabajando en grupo:</label>
+        <div class="slider-container">
+          <input type="range" name="q11" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>12. Me gusta explicar a otros cómo hacer cosas:</label>
+        <div class="slider-container">
+          <input type="range" name="q12" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>13. Escucho activamente cuando alguien tiene un problema:</label>
+        <div class="slider-container">
+          <input type="range" name="q13" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>14. Me interesa trabajar con personas de otros países:</label>
+        <div class="slider-container">
+          <input type="range" name="q14" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>15. Acepto bien las críticas constructivas:</label>
+        <div class="slider-container">
+          <input type="range" name="q15" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+    </div>
+
+    <div class="profesional">
+      <h3>🎯 Orientación profesional</h3>
+      <div class="question"><label>16. Me gustaría trabajar en una empresa tecnológica:</label>
+        <div class="slider-container">
+          <input type="range" name="q16" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>17. Me motiva tener un trabajo con buenas salidas:</label>
+        <div class="slider-container">
+          <input type="range" name="q17" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>18. Me gusta seguir aprendiendo cosas nuevas:</label>
+        <div class="slider-container">
+          <input type="range" name="q18" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>19. Me interesa crear soluciones que mejoren la vida de las personas:</label>
+        <div class="slider-container">
+          <input type="range" name="q19" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+      <div class="question"><label>20. Tengo buena memoria para detalles técnicos:</label>
+        <div class="slider-container">
+          <input type="range" name="q20" min="1" max="5" value="3">
+        </div>
+        <div class="scale"><span>1</span><span>2</span><span>3</span><span>4</span><span>5</span></div>
+      </div>
+    </div>
+
+    <button type="button" onclick="calculateScore()">Ver resultado</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateScore() {
+      const form = document.forms['quizForm'];
+      let score = 0;
+      for (let input of form.querySelectorAll('input[type="range"]')) {
+        score += parseInt(input.value);
+      }
+
+      let message = '';
+      if (score >= 80) {
+        message = '🔵 ¡Tienes un perfil muy alineado con la ingeniería informática!';
+      } else if (score >= 60) {
+        message = '🟡 Tienes buen potencial, sigue explorando esta opción.';
+      } else {
+        message = '🔴 Puede que esta no sea tu vocación principal, pero no descartes nada aún.';
+      }
+
+      document.getElementById('result').textContent = `Puntuación: ${score} / 100 → ${message}`;
+    }
+  </script>
+</body>
+</html>
+
+
