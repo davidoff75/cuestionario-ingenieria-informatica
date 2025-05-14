@@ -89,13 +89,37 @@
     .profesional input[type="range"] {
       accent-color: #2980b9;
     }
+    .submit-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 2em;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+    background-color: #45a049;
+  }
+
+  @media (max-width: 600px) {
+    .submit-button {
+      font-size: 1.1rem;
+      padding: 0.9em 1.6em;
+    }
+  }
   </style>
 </head>
 <body>
     <h1> I.E.S Carmen Conde - Feria de las profesiones 2025</h1>
-  <h2>Estás valorando estudiar  Ingeniería Informática?</h2>
-<h2> Autoevalúate con este cuestionario</h2>
-
+    <br>
+  <h2>¿Estás valorando estudiar  Ingeniería Informática?</h2>
+<br>
+  <h2> Autoevalúate con este cuestionario</h2>
+<br>
   <div class="instructions">
     <p><strong>Instrucciones:</strong> Este cuestionario te ayudará a reflexionar sobre si la ingeniería informática podría ser una buena opción para ti. Lee cada afirmación y mueve el control deslizante para indicar cuánto te identificas con ella:</p>
     <ul>
@@ -107,6 +131,7 @@
 
   <form id="quizForm">
     <div class="intereses">
+        <br>
       <h3>💡 Intereses personales</h3>
       <div class="question"><label>1. Me gusta entender cómo funcionan las cosas:</label>
         <div class="slider-container">
@@ -141,6 +166,7 @@
     </div>
 
     <div class="cognitivas">
+        <br>
       <h3>🧠 Habilidades cognitivas</h3>
       <div class="question"><label>6. Disfruto resolviendo problemas lógicos:</label>
         <div class="slider-container">
@@ -175,6 +201,7 @@
     </div>
 
     <div class="sociales">
+        <br>
       <h3>🤝 Habilidades sociales y de trabajo en equipo</h3>
       <div class="question"><label>11. Me siento cómodo trabajando en grupo:</label>
         <div class="slider-container">
@@ -209,6 +236,7 @@
     </div>
 
     <div class="profesional">
+        <br>
       <h3>🎯 Orientación profesional</h3>
       <div class="question"><label>16. Me gustaría trabajar en una empresa tecnológica:</label>
         <div class="slider-container">
@@ -242,6 +270,7 @@
       </div>
     </div>
 
+    <br>
     <button type="button" onclick="calculateScore()">Ver resultado</button>
   </form>
 
@@ -269,5 +298,3 @@
   </script>
 </body>
 </html>
-
-
