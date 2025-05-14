@@ -1,1 +1,1 @@
-# cuestionario-ingeniera-informatica
+# cuestionario-ingeniería-informática
